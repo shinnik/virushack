@@ -1,0 +1,16 @@
+.dialog-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+
+  &__header {
+    text-align: center;
+    color: white;
+  }
+
+  &__dialog {
+    display: flex;
+    justify-content: center;
+  }
+}
