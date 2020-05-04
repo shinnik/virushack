@@ -21,7 +21,9 @@ const PurchasesPage = () => {
     <div className="purchases-page">
       <div className="purchases-page__container">
         <h2 className="purchases-page__header">Текущий список продуктов</h2>
-        <p className="final-page__header">Сумма: {purchasesMocks.reduce((sum, item) => item.price + sum, 0)} ₽</p>
+        <p className="final-page__header">
+          Сумма: {purchasesMocks.reduce((sum, item) => (item.restricted ? sum : item.price + sum), 0)} ₽
+        </p>
         <Purchases purchases={purchasesMocks} />
       </div>
       <h2 className="purchases-page__header">Скажите "далее", чтобы добавить весовые продукты</h2>

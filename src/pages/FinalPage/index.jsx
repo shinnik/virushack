@@ -22,7 +22,12 @@ const FinalPage = () => {
       <div className="final-page__container">
         <h2 className="final-page__header">Текущий список продуктов</h2>
         <p className="final-page__header">
-          Сумма: {[...purchasesMocks, ...purchasesMocksWeighted].reduce((sum, item) => item.price + sum, 0)} ₽
+          Сумма:{' '}
+          {[...purchasesMocks, ...purchasesMocksWeighted].reduce(
+            (sum, item) => (item.restricted ? sum : item.price + sum),
+            0
+          )}{' '}
+          ₽
         </p>
         <Purchases purchases={purchasesMocks} />
         <br />

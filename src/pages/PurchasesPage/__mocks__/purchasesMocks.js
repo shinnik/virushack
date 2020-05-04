@@ -12,7 +12,8 @@ export const purchasesMocks = [
   {
     id: '3',
     name: 'ВИНО ИГР ЖЕМЧ ЛА КОЛЛЕЗИОНЕ БЕЛ П/СЛ 9,5% 0.75Л / ИТАЛИЯ/ВИНХОЛЛ',
-    price: 135
+    price: 135,
+    restricted: true
   }
 ];
 

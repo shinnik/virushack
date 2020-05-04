@@ -16,7 +16,7 @@ const WelcomePage = () => {
   }, []);
 
   return (
-    <div onKeyDown={onHandleEnter} className="welcome-page__container">
+    <div className="welcome-page__container">
       <p className="welcome-page__header">Отсканируйте QR-код</p>
       <div className="welcome-page__icon" />
     </div>
